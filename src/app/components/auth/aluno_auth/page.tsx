@@ -16,6 +16,7 @@ export default function Aluno() {
                 placeholder="Password"
                 className="border border-gray-300 rounded p-2"
             />
+            
             <button
                 type="submit"
                 className="rounded-full bg-blue-500 text-white px-4 py-2 hover:bg-blue-600 transition-colors"
@@ -36,7 +37,7 @@ export default function Aluno() {
         <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center pt-30">
             <a
             className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-            href="/home"
+            href="/"
             >
             Go to Home
             </a>
