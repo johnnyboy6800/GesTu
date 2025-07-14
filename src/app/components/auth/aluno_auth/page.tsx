@@ -1,10 +1,17 @@
 import Link from "next/link";
 
 export default function Aluno() { 
+    let userA:String = "aluno";
+    let userT:String = "tutor";
+    var titulo = (user:String) => {
+        return <>
+            <h1 className="text-2xl font-bold">Realize o login como {user}</h1>
+        </>
+    }
     return (
         <div className="grid grid-rows-2 items-center justify-items-center min-h-screen   sm:p-20 font-[family-name:var(--font-geist-sans)]">
         <main className="flex flex-col gap-[32px]  items-center sm:items-start">
-            <h1 className="text-2xl font-bold">Entre como aluno</h1>
+            {titulo(userA)}
             <form className="flex flex-col gap-4">
             <input
                 type="text"

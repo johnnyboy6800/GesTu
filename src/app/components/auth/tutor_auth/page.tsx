@@ -4,7 +4,7 @@ export default function tutor() {
     return (
         <div className="grid grid-rows-2 items-center justify-items-center min-h-screen sm:p-20 font-[family-name:var(--font-geist-sans)]">
             <main className="flex flex-col gap-[32px]  items-center sm:items-start">
-                <h1 className="text-2xl font-bold">Entre como tutor</h1>
+                <h1 className="text-2xl font-bold">Faça login como tutor</h1>
                 <form className="flex flex-col gap-4">
                     <input
                         type="text"

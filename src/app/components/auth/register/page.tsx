@@ -5,13 +5,11 @@ import { useState } from "react";
 import TutorRe from "./tutor";
 
 export default function Register() {
-    let [Alunoe, setAluno] = useState(false);
+    let [Alunoe, setAluno] = useState(true);
     let [Tutor, setTutor] = useState(false);
     const eventHandler = (event: React.MouseEvent<HTMLButtonElement>) => {
         event.preventDefault();
         let buttonType = event.currentTarget.textContent;
-        let message = `You clicked the ${buttonType} button`;
-        console.log(message);
         if (buttonType === "Aluno") {
             setAluno(true);
             setTutor(false);
