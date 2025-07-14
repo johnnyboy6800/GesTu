@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Notas() {
     return (
-        <div className="sm:p-20 font-[family-name:var(--font-geist-sans)]">
+        <div className="sm:p-20 font-[family-name:var(--font-geist-sans)] justify-center items-center  grid grid-rows-2">
             <main className="flex flex-col gap-[32px]  row-start-2 items-center sm:items-start">
                 <h1 className="text-2xl font-bold">Notas do Aluno</h1>
                 <p className="text-lg">Aqui estão suas notas recentes:</p>
@@ -24,10 +24,11 @@ export default function Notas() {
                         </tr>    
                         </tbody>               
                         </table>
+                        <p><Link href={'/'}>Go to home</Link></p>
             </main>
 
             <div className="mt-10 text-center">
-                <p><Link href={'/'}>Go to home</Link></p>
+                
             </div>
 
         </div>

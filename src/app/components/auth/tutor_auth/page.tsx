@@ -1,8 +1,8 @@
 import Link from "next/link";
 
-export default function tutor() {
+export default function Tutor() {
     return (
-        <div className="grid grid-rows-2 items-center justify-items-center min-h-screen sm:p-20 font-[family-name:var(--font-geist-sans)]">
+        <>
             <main className="flex flex-col gap-[32px]  items-center sm:items-start">
                 <h1 className="text-2xl font-bold">Faça login como tutor</h1>
                 <form className="flex flex-col gap-4">
@@ -30,7 +30,7 @@ export default function tutor() {
                     Esqueci minha senha
                 </p>
                 <p className="text-sm text-gray-500">
-                    Entre como  <Link className="" href={"/components/auth/Login/"}>aluno</Link>
+                    Entre como  <Link className="" href={"/components/auth/aluno_auth/"}>aluno</Link>
                 </p>
             </main>
             <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center pt-30">
@@ -41,6 +41,6 @@ export default function tutor() {
                     Go to Home
                 </a>
             </footer>
-        </div>
+        </>
     )
  }
